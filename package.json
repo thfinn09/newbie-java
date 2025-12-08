@@ -1,0 +1,28 @@
+{
+  "name": "newblog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thfinn09/newbie-java.git"
+  },
+  "keywords": [
+    "123"
+  ],
+  "author": "thuanhhh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thfinn09/newbie-java/issues"
+  },
+  "homepage": "https://github.com/thfinn09/newbie-java#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
