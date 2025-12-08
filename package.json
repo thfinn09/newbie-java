@@ -1,9 +1,9 @@
 {
   "name": "newblog",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js"
+    "start": "nodemon --inspect src/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,11 @@
   "homepage": "https://github.com/thfinn09/newbie-java#readme",
   "description": "",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "express-handlebars": "^8.0.1"
   },
   "devDependencies": {
+    "morgan": "^1.10.1",
     "nodemon": "^3.1.11"
   }
 }
