@@ -26,6 +26,15 @@ app.get('/test', (req, res) => {
   res.render('test');
 });
 
+app.get('/search', (req, res) => {
+  res.render('search');
+});
+
+app.post('/search', (req, res) => {
+  res.send('');
+});
+
+
 // START SERVER
 app.listen(port, () => {
   console.log(`Server chạy tại http://localhost:${port}`);
