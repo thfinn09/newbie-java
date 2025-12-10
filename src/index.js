@@ -5,6 +5,8 @@ const { engine } = require ('express-handlebars');
 const app = express();
 const port = 3000;
 
+const route = require('./routes');
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 
@@ -18,21 +20,8 @@ app.engine('hbs', engine({
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources/views'));
 
-app.get('/', (req, res) => {
-  res.render('home');
-});
-
-app.get('/test', (req, res) => {
-  res.render('test');
-});
-
-app.get('/search', (req, res) => {
-  res.render('search');
-});
-
-app.post('/search', (req, res) => {
-  res.send('');
-});
+// ROUTES INIT
+route(app);
 
 
 // START SERVER
