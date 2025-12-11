@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
+    "beautiful": "lint-staged",
     "start": "nodemon --inspect src/index.js",
-    "watch": "node-sass --watch src/resources/scss/ --o src/public/css/"
+    "watch": "node-sass --watch src/resources/scss/ --o src/public/css/",
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -19,15 +22,23 @@
     "url": "https://github.com/thfinn09/newbie-java/issues"
   },
   "homepage": "https://github.com/thfinn09/newbie-java#readme",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --write"
+  },
   "description": "",
   "dependencies": {
     "express": "^5.2.1",
     "express-handlebars": "^8.0.1",
+    "mongoose": "^9.0.1",
     "node": "^20.19.6"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "morgan": "^1.10.1",
     "node-sass": "^9.0.0",
-    "nodemon": "^3.1.11"
+    "nodemon": "^3.1.11",
+    "precise-commits": "^1.0.2",
+    "prettier": "^3.7.4"
   }
 }

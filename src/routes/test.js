@@ -5,8 +5,7 @@ const testController = require('../app/controllers/TestController');
 
 // TestController.index
 
-router.use('/hocnodejs', testController.show);
-router.use('/', testController.index);
-
+router.get('/hocnodejs', testController.show);
+router.get('/', testController.index);
 
 module.exports = router;

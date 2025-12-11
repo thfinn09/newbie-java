@@ -1,5 +1,7 @@
-h1 {
-  color: red; }
+.card {
+    margin-bottom: 20px;
+}
 
-h2 {
-  color: aqua; }
+.col-sm-6.col-lg-4 {
+    padding: 10px;
+}
